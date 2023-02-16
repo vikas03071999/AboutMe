@@ -1,9 +1,26 @@
-function App() {
+import React from 'react'
+import styled from 'styled-components'
+import ContentSection from './Components/ContentSection';
+import Sidebar from './Components/Sidebar';
+
+
+/**
+ font-family: 'Handlee', cursive;
+`font-family: 'Libre Franklin', sans-serif;
+ */
+const AppContainer = styled.div`
+  display: flex;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+`;
+const App = () => {
   return (
-    <div className="App">
-      About me app
-    </div>
-  );
+    <AppContainer>
+      <Sidebar />
+      <ContentSection />
+    </AppContainer>
+  )
 }
 
-export default App;
+export default App
+
