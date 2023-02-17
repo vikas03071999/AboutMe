@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Home from '../Components/Home';
 
 const ContentSectionContainer = styled.div`
     flex: 80%;
@@ -9,7 +10,7 @@ const ContentSectionContainer = styled.div`
 const ContentSection = () => {
   return (
     <ContentSectionContainer>
-      Main content
+      <Home />
     </ContentSectionContainer>
   )
 }

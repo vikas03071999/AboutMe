@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import ContentSection from './Components/ContentSection';
+import ContentSection from './Container/ContentSection';
 import Sidebar from './Components/Sidebar';
 
 
