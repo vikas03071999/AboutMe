@@ -10,7 +10,7 @@ import Sidebar from './Components/Sidebar';
  */
 const AppContainer = styled.div`
   display: flex;
-  position: relative;
+  /* position: relative; */
   font-family: 'Poppins', sans-serif;
 `;
 const App = () => {

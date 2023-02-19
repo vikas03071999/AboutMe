@@ -1,16 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import  ProfilePicture  from '../Assets/Images/Vikas1922894.jpg'
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si"
 import { AiFillTwitterCircle } from "react-icons/ai"
-
+import { Context } from '../Context/Context'
 // REACT BLUE COLOR CODE = "#61dafb"
 const SidebarContainer = styled.div`
     flex:20%;
-    background-color: aqua;
     height: 100vh;
     background-color: #20232a;
+    overflow-y: scroll;
 `;
 
 const SidebarWrapper = styled.div`
@@ -56,7 +56,7 @@ const SidebarItem = styled.li`
     font-size: 18px;
     cursor: pointer;
     &:hover{
-        color: #61dafb;
+        color: #61dafb !important;
     }
 `;
 
@@ -69,6 +69,9 @@ const ConnectWithMe = styled.div`
 `;
 
 const Sidebar = () => {
+
+  const {activeClass,dispatch} = useContext(Context)
+  console.log(activeClass)
   return (
     <SidebarContainer>
       <SidebarWrapper>
@@ -77,12 +80,12 @@ const Sidebar = () => {
             <Name>Vikas Belal</Name>
         </PictureNameContainer>
         <SidebarItems>
-            <SidebarItem>Home</SidebarItem>
-            <SidebarItem>About me</SidebarItem>
-            <SidebarItem>What I do</SidebarItem>
-            <SidebarItem>Resume</SidebarItem>
-            <SidebarItem>Portfolio</SidebarItem>
-            <SidebarItem>Contact</SidebarItem>
+            <SidebarItem style={{color:activeClass === "Home" ? "#61dafb":"white"}}>Home</SidebarItem>
+            <SidebarItem style={{color:activeClass === "About" ? "#61dafb":"white"}}>About me</SidebarItem>
+            <SidebarItem style={{color:activeClass === "What I Do" ? "#61dafb":"white"}}>What I do</SidebarItem>
+            <SidebarItem style={{color:activeClass === "Resume" ? "#61dafb":"white"}}>Resume</SidebarItem>
+            <SidebarItem style={{color:activeClass === "Portfolio" ? "#61dafb":"white"}}>Portfolio</SidebarItem>
+            <SidebarItem style={{color:activeClass === "Contact" ? "#61dafb":"white"}}>Contact</SidebarItem>
         </SidebarItems>
         <ConnectWithMe>
             <FaLinkedin style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
