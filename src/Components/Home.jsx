@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components'
 import { RxDoubleArrowDown } from "react-icons/rx";
 import HB3 from "../Assets/Images/HB3.jpg"
 import HB1 from "../Assets/Images/HB1.jpg"
 import HB2 from "../Assets/Images/HB2.jpg"
+import { userDetails } from '../Data/UserData';
+import { Context } from "../Context/Context"
 // REACT BLUE COLOR CODE = "#61dafb"
 
 const HomeContainer = styled.div`
@@ -26,7 +28,6 @@ const HomeContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   
 `;
 const InfoContainer = styled.div`
     display: flex;
@@ -63,7 +64,12 @@ const HireMe = styled.button`
     border-radius: 30px;
     font-size: 20px;
     cursor: pointer;
-
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #61dafb;
+        color: white;
+        font-weight: 500;
+    }
 `;
 
 const NavigateDownArrow = styled.a`
@@ -85,12 +91,21 @@ const ArrowWrapper = styled.span`
 
 
 const Home = () => {
+
+    const {dispatch} = useContext(Context)
+
+    const handleSidebar = () => {
+        dispatch({
+            type:"ACTIVATE_HOME"
+        })
+    }
+
     return (
-        <HomeContainer>
+        <HomeContainer id="home" onMouseEnter={handleSidebar}>
             <InfoContainer>
                 <Welcome>Welcome</Welcome>
-                <WhatAmI>I am a Web Developer</WhatAmI>
-                <BasedIn>based in Uttarakhand, India</BasedIn>
+                <WhatAmI>I am a {userDetails.designation}</WhatAmI>
+                <BasedIn>based in {userDetails.state}, {userDetails.country}</BasedIn>
                 <HireMe>Hire me</HireMe>
             </InfoContainer>
             <NavigateDownArrow href='#'>
