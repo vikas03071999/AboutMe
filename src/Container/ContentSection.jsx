@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import AboutMe from '../Components/AboutMe';
 import Home from '../Components/Home';
+import Portfolio from '../Components/Portfolio';
 import Resume from '../Components/Resume';
 import WhatIDo from '../Components/WhatIDo';
 
@@ -18,6 +19,7 @@ const ContentSection = () => {
       <AboutMe />
       <WhatIDo />
       <Resume />
+      <Portfolio />
     </ContentSectionContainer>
   )
 }
