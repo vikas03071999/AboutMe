@@ -75,7 +75,7 @@ const Contact = () => {
   }
   return (
     <>
-      <ContactContainer id="contact" onMouseOver={handleSidebar}>
+      <ContactContainer id="contact" onMouseOver={handleSidebar} onWheel={handleSidebar}>
         <ContactWrapper>
           <TitleWrapper>
             <Title>Get in Touch</Title>

@@ -39,8 +39,8 @@ const Heading = styled.h3`
     margin-left: 5px;
 `;
 const InfomationCard = styled.div`
-    width: 380px;
-    height: 225px;
+    min-width: 380px;
+    min-height: 225px;
     border: 2px solid #F5F5F5;
     border-radius: 5px;
     display: flex;
@@ -51,8 +51,8 @@ const InfomationCard = styled.div`
     margin-bottom: 25px;
 `;
 const TimeDuration = styled.span`
-    width: 85px;
-    height: 14px;
+    width: 113px;
+    height: 20px;
     background-color: #61dafb;
     padding: 5px 5px;
     color: white;
@@ -70,7 +70,12 @@ const UniversityOrCompany = styled.span`
 `;
 const SomeDescription = styled.p`
     margin: 0;
+    line-height: 35px;
 `;
+const Label = styled.label`
+    font-weight: 500;
+    font-size: 17px;
+`
 
 
 
@@ -87,7 +92,7 @@ const Resume = () => {
     }
 
     return (
-        <ResumeContainer id='resume' onWheel={handleSidebar} onMouseEnter={handleSidebar} onMouseOver={handleSidebar}>
+        <ResumeContainer id='resume' onWheel={handleSidebar} onMouseOver={handleSidebar}>
             <ResumeWrapper>
                 <TitleWrapper>
                     <Title>Resume</Title>
@@ -100,37 +105,42 @@ const Resume = () => {
                             <TimeDuration>2017-2021</TimeDuration>
                             <StreamOrRole>Computer Science</StreamOrRole>
                             <UniversityOrCompany>GLA University, Mathura</UniversityOrCompany>
-                            <SomeDescription>Subjects studied were OOPS, DBMS, OperatingSystem,
-                                Computer Networks. Scored 7.5 GPA overall
+                            <SomeDescription>
+                                <Label>Overall percentage</Label> - 76.4 <br/>
+                                <Label>Knowledge gained</Label> - Java(OOPS), DBMS,
+                                Operating System, Computer networks, Data Structures and algorithms etc
                             </SomeDescription>
                         </InfomationCard>
                         <InfomationCard>
                             <TimeDuration>2015-2016</TimeDuration>
-                            <StreamOrRole>P C M</StreamOrRole>
+                            <StreamOrRole>Science stream</StreamOrRole>
                             <UniversityOrCompany>New Beersheba School</UniversityOrCompany>
-                            <SomeDescription>Subjects studied were OOPS, DBMS, OperatingSystem,
-                                Computer Networks. Scored 7.5 GPA overall
+                            <SomeDescription>
+                                <Label>Overall percentage</Label> - 79.6 <br />
+                                <Label>Subjects</Label> - Physics, Chemistry, Maths
                             </SomeDescription>
                         </InfomationCard>
                     </VerticalSection>
                     <VerticalSection>
                         <Heading>My Experience</Heading>
                         <InfomationCard>
+                            <TimeDuration>2021-Current</TimeDuration>
+                            <StreamOrRole>System Engineer</StreamOrRole>
+                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
+                            <SomeDescription>
+                                <Label>Role</Label> - Frontend developer<br />
+                                <Label>Responsibility</Label> - Building enterprise level applications for Ericsson(client)<br />
+                                <Label>Technologies</Label> - ReactJS, jQuery, SharePoint 
+                            </SomeDescription>
+                        </InfomationCard>
+                        {/* <InfomationCard>
                             <TimeDuration>2021-2023</TimeDuration>
                             <StreamOrRole>System Engineer</StreamOrRole>
                             <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
                             <SomeDescription>Working on Ericsson account to build enterprise level
                                 application that caters to their requirements.
                             </SomeDescription>
-                        </InfomationCard>
-                        <InfomationCard>
-                            <TimeDuration>2021-2023</TimeDuration>
-                            <StreamOrRole>System Engineer</StreamOrRole>
-                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
-                            <SomeDescription>Working on Ericsson account to build enterprise level
-                                application that caters to their requirements.
-                            </SomeDescription>
-                        </InfomationCard>
+                        </InfomationCard> */}
                     </VerticalSection>
                 </EducationExperience>
             </ResumeWrapper>

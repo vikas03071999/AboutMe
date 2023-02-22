@@ -71,6 +71,23 @@ const HireMe = styled.button`
         font-weight: 500;
     }
 `;
+const ViewMyWork = styled.a`
+    text-decoration: none;
+    border: 2px solid #61dafb;
+    padding: 10px 30px;
+    color: #61dafb;
+    font-family: 'Libre Franklin', sans-serif;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #61dafb;
+        color: white;
+        font-weight: 500;
+    }
+`;
 
 const NavigateDownArrow = styled.a`
     margin-top: 35px;
@@ -101,14 +118,14 @@ const Home = () => {
     }
 
     return (
-        <HomeContainer id="home" onMouseEnter={handleSidebar}>
+        <HomeContainer id="home" onMouseEnter={handleSidebar} onWheel={handleSidebar}>
             <InfoContainer>
                 <Welcome>Welcome</Welcome>
                 <WhatAmI>I am a {userDetails.designation}</WhatAmI>
                 <BasedIn>based in {userDetails.state}, {userDetails.country}</BasedIn>
-                <HireMe>Hire me</HireMe>
+                <ViewMyWork href="#portfolio">View my work</ViewMyWork>
             </InfoContainer>
-            <NavigateDownArrow href='#'>
+            <NavigateDownArrow href='#portfolio'>
                 <ArrowWrapper>
                     <RxDoubleArrowDown style={{ color: "white" }} />
                 </ArrowWrapper>

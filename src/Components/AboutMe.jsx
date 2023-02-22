@@ -91,7 +91,7 @@ const AboutMe = () => {
     }
 
     return (
-        <AboutMeConatiner id="aboutMe" onMouseOver={handleSidebar}>
+        <AboutMeConatiner id="aboutMe" onMouseOver={handleSidebar} onWheel={handleSidebar}>
             <AboutMeWrapper>
                 <Header>
                     <Title>Know me more</Title>

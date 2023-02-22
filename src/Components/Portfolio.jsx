@@ -158,7 +158,7 @@ const Portfolio = () => {
         })
     }
     return (
-        <PortfolioContainer id='portfolio' onMouseOver={handleSidebar}>
+        <PortfolioContainer id='portfolio' onMouseOver={handleSidebar} onWheel={handleSidebar}>
             <PortfolioWrapper>
                 <TitleWrapper>
                     <Title>My Work</Title>
