@@ -80,12 +80,12 @@ const Sidebar = () => {
             <Name>Vikas Belal</Name>
         </PictureNameContainer>
         <SidebarItems>
-            <SidebarItem style={{color:activeClass === "Home" ? "#61dafb":"white"}}>Home</SidebarItem>
-            <SidebarItem style={{color:activeClass === "About" ? "#61dafb":"white"}}>About me</SidebarItem>
-            <SidebarItem style={{color:activeClass === "What I Do" ? "#61dafb":"white"}}>What I do</SidebarItem>
-            <SidebarItem style={{color:activeClass === "Resume" ? "#61dafb":"white"}}>Resume</SidebarItem>
-            <SidebarItem style={{color:activeClass === "Portfolio" ? "#61dafb":"white"}}>Portfolio</SidebarItem>
-            <SidebarItem style={{color:activeClass === "Contact" ? "#61dafb":"white"}}>Contact</SidebarItem>
+            <a href="#home" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Home" ? "#61dafb":"white"}} href="#home">Home</SidebarItem></a>
+            <a href="#aboutMe" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "About" ? "#61dafb":"white"}} href="#aboutMe">About me</SidebarItem></a>
+            <a href="#whatIDo" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "What I Do" ? "#61dafb":"white"}} href="#whatIDo">What I do</SidebarItem></a>
+            <a href="#resume" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Resume" ? "#61dafb":"white"}} href="#resume">Resume</SidebarItem></a>
+            <a href="#portfolio" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Portfolio" ? "#61dafb":"white"}} href="#portfolio">Portfolio</SidebarItem></a>
+            <a href="#contact" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Contact" ? "#61dafb":"white"}} href="#contact">Contact</SidebarItem></a>
         </SidebarItems>
         <ConnectWithMe>
             <FaLinkedin style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
