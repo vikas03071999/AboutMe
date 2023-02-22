@@ -80,18 +80,18 @@ const Sidebar = () => {
             <Name>Vikas Belal</Name>
         </PictureNameContainer>
         <SidebarItems>
-            <a href="#home" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Home" ? "#61dafb":"white"}} href="#home">Home</SidebarItem></a>
-            <a href="#aboutMe" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "About" ? "#61dafb":"white"}} href="#aboutMe">About me</SidebarItem></a>
-            <a href="#whatIDo" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "What I Do" ? "#61dafb":"white"}} href="#whatIDo">What I do</SidebarItem></a>
-            <a href="#resume" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Resume" ? "#61dafb":"white"}} href="#resume">Resume</SidebarItem></a>
-            <a href="#portfolio" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Portfolio" ? "#61dafb":"white"}} href="#portfolio">Portfolio</SidebarItem></a>
-            <a href="#contact" style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Contact" ? "#61dafb":"white"}} href="#contact">Contact</SidebarItem></a>
+            <a href="#home" onClick={()=>dispatch({type:"ACTIVATE_HOME"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Home" ? "#61dafb":"white"}} href="#home">Home</SidebarItem></a>
+            <a href="#aboutMe" onClick={()=>dispatch({type:"ACTIVATE_ABOUT"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "About" ? "#61dafb":"white"}} href="#aboutMe">About me</SidebarItem></a>
+            <a href="#whatIDo" onClick={()=>dispatch({type:"ACTIVATE_WHATIDO"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "What I Do" ? "#61dafb":"white"}} href="#whatIDo">Skills</SidebarItem></a>
+            <a href="#resume" onClick={()=>dispatch({type:"ACTIVATE_RESUME"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Resume" ? "#61dafb":"white"}} href="#resume">Resume</SidebarItem></a>
+            <a href="#portfolio" onClick={()=>dispatch({type:"ACTIVATE_PORTFOLIO"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Portfolio" ? "#61dafb":"white"}} href="#portfolio">Portfolio</SidebarItem></a>
+            <a href="#contact" onClick={()=>dispatch({type:"ACTIVATE_CONTACT"})} style={{textDecoration:"none"}}><SidebarItem style={{color:activeClass === "Contact" ? "#61dafb":"white"}} href="#contact">Contact</SidebarItem></a>
         </SidebarItems>
         <ConnectWithMe>
-            <FaLinkedin style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
-            <FaGithubSquare style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
-            <SiLeetcode style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
-            <AiFillTwitterCircle style={{color:"white",fontSize:"20px",cursor:"pointer"}}/>
+            <a href="https://www.linkedin.com/in/vikas-belal-0193671a4/" target="_blank"><FaLinkedin style={{color:"white",fontSize:"20px",cursor:"pointer"}}/></a>
+            <a href="https://github.com/vikas03071999" target="_blank"><FaGithubSquare style={{color:"white",fontSize:"20px",cursor:"pointer"}}/></a>
+            <a href="https://leetcode.com/belalvikas/" target="_blank"><SiLeetcode style={{color:"white",fontSize:"20px",cursor:"pointer"}}/></a>
+            <a href=""><AiFillTwitterCircle style={{color:"white",fontSize:"20px",cursor:"pointer"}}/></a>
         </ConnectWithMe>
       </SidebarWrapper>
     </SidebarContainer>
