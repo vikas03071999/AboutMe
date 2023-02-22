@@ -87,7 +87,7 @@ const Resume = () => {
     }
 
     return (
-        <ResumeContainer onWheel={handleSidebar} onMouseEnter={handleSidebar} onMouseOver={handleSidebar}>
+        <ResumeContainer id='resume' onWheel={handleSidebar} onMouseEnter={handleSidebar} onMouseOver={handleSidebar}>
             <ResumeWrapper>
                 <TitleWrapper>
                     <Title>Resume</Title>
