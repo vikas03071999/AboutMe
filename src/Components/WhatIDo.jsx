@@ -61,10 +61,10 @@ const WhatIDo = () => {
         })
     }
   return (
-    <WhatIDoContainer id="whatIDo" onMouseEnter={handleSidebar}>
+    <WhatIDoContainer id="whatIDo" onMouseEnter={handleSidebar} onWheel={handleSidebar}>
         <WhatIDoWrapper>
             <TitleWrapper>
-                <Title>What I Do?</Title>
+                <Title>Skills</Title>
                 <TitleUnderline></TitleUnderline>
             </TitleWrapper>
             <SkillsContainer>
