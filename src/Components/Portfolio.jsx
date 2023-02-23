@@ -1,9 +1,10 @@
 import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
-import MyWork1 from '../Assets/Images/MyWork1.PNG'
-import MyWork2 from '../Assets/Images/MyWork2.PNG'
-import MyWork3 from '../Assets/Images/MyWork3.PNG'
-import MyWork4 from '../Assets/Images/MyWork4.PNG'
+import BlogAppThumbnail from '../Assets/Images/BlogAppThumbnail.PNG'
+import ChatAppThumbnail from '../Assets/Images/ChatAppThumbnail.PNG'
+import QuizAppThumbnail from '../Assets/Images/QuizAppThumbnail.PNG'
+import EcommerceThumbnail from '../Assets/Images/EcommerceThumbnail.PNG'
+import MyBioThumbnail from '../Assets/Images/MyBioThumbnail.PNG'
 import { userProjects } from '../Data/UserData'
 import { Context } from "../Context/Context"
 
@@ -175,7 +176,7 @@ const Portfolio = () => {
                         <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
                             {
                                 showImage1 ?
-                                    <ProjectCardImage src={MyWork1} /> :
+                                    <ProjectCardImage src={BlogAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[0].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[0].techStack}</CurrentProjectCategory>
@@ -183,44 +184,44 @@ const Portfolio = () => {
                             }
 
                         </ProjectCardSmall>
-                        <ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)}>
+                        <a href="https://vikas03071999.github.io/ChatApp/" target="_blank" style={{textDecoration:"none"}}><ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)} onClick={()=>window.location}>
                             {
                                 showImage2 ?
-                                    <ProjectCardImage src={MyWork2} /> :
+                                    <ProjectCardImage src={ChatAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[1].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[1].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardLarge>
+                        </ProjectCardLarge></a>
                     </ProjectColumn>
                     <ProjectColumn>
-                        <ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{textDecoration:"none"}}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={MyWork3} /> :
+                                    <ProjectCardImage src={QuizAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardExtraLarge>
-                        <ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
+                        </ProjectCardExtraLarge></a>
+                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{textDecoration:"none"}}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
                             {
                                 showImage4 ?
-                                    <ProjectCardImage src={MyWork4} /> :
+                                    <ProjectCardImage src={EcommerceThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[3].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[3].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardMedium>
+                        </ProjectCardMedium></a>
                     </ProjectColumn>
                     <ProjectColumn>
                         <ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
                             {
                                 showImage5 ?
-                                    <ProjectCardImage src={MyWork2} /> :
+                                    <ProjectCardImage src={MyBioThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[4].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[4].techStack}</CurrentProjectCategory>
@@ -230,7 +231,7 @@ const Portfolio = () => {
                         <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
                             {
                                 showImage6 ?
-                                    <ProjectCardImage src={MyWork2} /> :
+                                    <ProjectCardImage src={BlogAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
@@ -240,7 +241,7 @@ const Portfolio = () => {
                         <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                         {
                                 showImage7 ?
-                                    <ProjectCardImage src={MyWork2} /> :
+                                    <ProjectCardImage src={EcommerceThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[6].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[6].techStack}</CurrentProjectCategory>
