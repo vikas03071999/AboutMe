@@ -99,12 +99,15 @@ const AboutMe = () => {
                 </Header>
                 <AboutMeInfo>
                     <AboutMeDescription>
-                        <DescStartingLine>I am <span style={{ color: "#61dafb" }}>Vikas Belal</span>, a Web Developer</DescStartingLine><br />
+                        <DescStartingLine>I am <span style={{ color: "#61dafb" }}>Vikas Belal</span>, a full stack developer</DescStartingLine><br />
                         <DescRemainingPara>
-                            I help you build brand for your business at an affordable price.
-                            Thousands of clients have procured exceptional results while 
-                            working with our dedicated team. when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br />
-                            Delivering work within time and budget which meets client’s requirements is our moto. Lorem Ipsum has been the industry's standard dummy text ever when an unknown printer took a galley.
+                        specialized in creating and maintaining websites using various programming languages,
+                        such as HTML, CSS, and JavaScript. I am responsible for designing, 
+                        coding, testing, and deploying web applications or sites, 
+                        and ensuring that they are functional, user-friendly, and visually appealing. I have good
+                        amount of knowledge in ReactJS, NodeJS, ExpressJS along with relational and document databases
+                        like MongoDB, MySQL etc.
+
                         </DescRemainingPara>
                     </AboutMeDescription>
                     <AboutMeDetails>
