@@ -34,10 +34,16 @@ const SkillsContainer = styled.div`
     gap: 15px;
 `;
 const SingleSkill = styled.div`
+    min-width: 270px;
+    min-height: 190px;
     flex: 35%;
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
+    border: 2px dotted #61dafb;
+    padding: 15px 35px;
+    border-radius: 10px;
+    background-color: white;
 `;
 const AboutSkill = styled.div`
     display: flex;
@@ -69,46 +75,42 @@ const WhatIDo = () => {
             </TitleWrapper>
             <SkillsContainer>
                 <SingleSkill>
-                <DiHtml5 style={{width:"150px",height:"75px"}}/>
                     <AboutSkill>
                         <SkillTitle>Web development</SkillTitle>
-                        <SkillDescription>I develop websites using ReactJS library.
-                            This bio website is also built using ReactJS. ReactJS is a
-                            very popular library used by top tech giants like Meta,
-                            Airbnb etc
+                        <SkillDescription>My expertise includes a variety of programming
+                             languages and technologies, such as HTML, CSS, JavaScript, 
+                             React, Node.js, and more. I am skilled in database management, 
+                             website optimization.
                         </SkillDescription>
                     </AboutSkill>
                 </SingleSkill>
                 <SingleSkill>
-                    <DiHtml5 style={{width:"150px",height:"75px"}}/>
                     <AboutSkill>
-                        <SkillTitle>Web development</SkillTitle>
-                        <SkillDescription>I develop websites using ReactJS library.
-                            This bio website is also built using ReactJS. ReactJS is a
-                            very popular library used by top tech giants like Meta,
-                            Airbnb etc
+                        <SkillTitle>Problem solving</SkillTitle>
+                        <SkillDescription>Skilled in designing and implementing efficient
+                            algorithms to solve complex problems using various data 
+                            structures such as arrays, linked lists, trees, graphs,
+                            and more. Solved over 200 problems on Leet code and counting. 
                         </SkillDescription>
                     </AboutSkill>
                 </SingleSkill>
                 <SingleSkill>
-                    <DiHtml5 style={{width:"150px",height:"75px"}}/>
                     <AboutSkill>
-                        <SkillTitle>Web development</SkillTitle>
-                        <SkillDescription>I develop websites using ReactJS library.
-                            This bio website is also built using ReactJS. ReactJS is a
-                            very popular library used by top tech giants like Meta,
-                            Airbnb etc
+                        <SkillTitle>Object oriented programming</SkillTitle>
+                        <SkillDescription>Good understanding of OOPS concept such as 
+                            classes, inheritance, polymorphism, encapsulation etc.
+                            Have good command over OOP language Java.
                         </SkillDescription>
                     </AboutSkill>
                 </SingleSkill>
                 <SingleSkill>
-                    <DiHtml5 style={{width:"150px",height:"75px"}}/>
                     <AboutSkill>
-                        <SkillTitle>Web development</SkillTitle>
-                        <SkillDescription>I develop websites using ReactJS library.
-                            This bio website is also built using ReactJS. ReactJS is a
-                            very popular library used by top tech giants like Meta,
-                            Airbnb etc
+                        <SkillTitle>Software development lifecycle(SDLC)</SkillTitle>
+                        <SkillDescription>
+                            Experience working with agile team in 
+                            a fast paced environment. Good understanding of
+                            agile methodolgies such as Sprint planning, product backlog,
+                            kanban etc. 
                         </SkillDescription>
                     </AboutSkill>
                 </SingleSkill>
