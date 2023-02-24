@@ -10,6 +10,7 @@ const ResumeWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 35px;
+    align-items: center;
 `;
 const TitleWrapper = styled.div`
     display: flex;
@@ -75,7 +76,24 @@ const SomeDescription = styled.p`
 const Label = styled.label`
     font-weight: 500;
     font-size: 17px;
-`
+`;
+const ResumeLink = styled.a`
+    text-decoration: none;
+    border: 2px solid #61dafb;
+    padding: 10px 30px;
+    color: #61dafb;
+    font-family: 'Libre Franklin', sans-serif;
+    background: transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover{
+        background-color: #61dafb;
+        color: white;
+        font-weight: 500;
+    }
+`;
 
 
 
@@ -143,6 +161,7 @@ const Resume = () => {
                         </InfomationCard> */}
                     </VerticalSection>
                 </EducationExperience>
+                <ResumeLink href="https://docs.google.com/document/d/1Y2aiCKy0K-VP99n_7aOQjsC9bwPNyrcA7QsXfLndFv8/edit?usp=share_link" target="_blank">View resume</ResumeLink>
             </ResumeWrapper>
         </ResumeContainer>
     )
