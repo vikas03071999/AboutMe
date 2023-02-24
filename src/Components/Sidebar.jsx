@@ -59,6 +59,9 @@ const SidebarItem = styled.li`
     &:hover{
         color: #61dafb !important;
     }
+    @media all and (max-width: 990px) {
+        color: black !important;
+    }
 `;
 
 const ConnectWithMe = styled.div`

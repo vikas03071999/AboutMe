@@ -69,6 +69,27 @@ const ProjectCardSmall = styled.div`
     &:hover{
         background-color: #201f1f;
     }
+    @media (min-width:1151px) and (max-width:1199px){
+        width: 275px;
+        height: 180px;
+    }
+    @media (min-width:1092px) and (max-width:1150px){
+        width: 265px;
+        height: 170px;
+    }
+    @media (min-width:1051px) and (max-width:1091px){
+        width: 255px;
+        height: 160px;
+    }
+    @media (min-width:1021px) and (max-width:1050px){
+        width: 245px;
+        height: 150px;
+    }
+    @media (min-width:992px) and (max-width:1020px){
+        width: 240px;
+        height: 145px;
+    }
+
 `;
 const ProjectCardMedium = styled.div`
     cursor: pointer;
@@ -84,6 +105,26 @@ const ProjectCardMedium = styled.div`
     transition: all 0.6s ease;
     &:hover{
         background-color: #201f1f;
+    }
+    @media (min-width:1151px) and (max-width:1199px){
+        width: 276px;
+        height: 276px;
+    }
+    @media (min-width:1092px) and (max-width:1150px){
+        width: 266px;
+        height: 266px;
+    }
+     @media (min-width:1051px) and (max-width:1091px){
+        width: 256px;
+        height: 256px;
+    }
+    @media (min-width:1021px) and (max-width:1050px){
+        width: 246px;
+        height: 246px;
+    }
+    @media (min-width:992px) and (max-width:1020px){
+        width: 241px;
+        height: 428px;
     }
 `;
 const ProjectCardLarge = styled.div`
@@ -101,6 +142,26 @@ const ProjectCardLarge = styled.div`
     &:hover{
         background-color: #201f1f;
     }
+    @media (min-width:1151px) and (max-width:1199px){
+        width: 276px;
+        height: 419px;
+    }
+    @media (min-width:1092px) and (max-width:1150px){
+        width: 266px;
+        height: 409px;
+    }
+    @media (min-width:1051px) and (max-width:1091px){
+        width: 256px;
+        height: 400px;
+    }
+    @media (min-width:1021px) and (max-width:1050px){
+        width: 246px;
+        height: 390px;
+    }
+    @media (min-width:992px) and (max-width:1020px){
+        width: 239px;
+        height: 385px;
+    }
 `;
 const ProjectCardExtraLarge = styled.div`
     cursor: pointer;
@@ -117,6 +178,27 @@ const ProjectCardExtraLarge = styled.div`
     &:hover{
         background-color: #201f1f;
     }
+    @media (min-width:1151px) and (max-width:1199px){
+        width: 276px;
+        height: 468px;
+    }
+    @media (min-width:1092px) and (max-width:1150px){
+        width: 266px;
+        height: 458px;
+    }
+    @media (min-width:1051px) and (max-width:1091px){
+        width: 256px;
+        height: 448px;
+    }
+    @media (min-width:1021px) and (max-width:1050px){
+        width: 246px;
+        height: 438px;
+    }
+    @media (min-width:992px) and (max-width:1020px){
+        width: 239px;
+        height: 433px;
+    }
+
 `;
 const ProjectCardImage = styled.img`
     height: inherit;

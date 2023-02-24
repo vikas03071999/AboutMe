@@ -11,6 +11,7 @@ const ContentSectionContainer = styled.div`
     flex: 80%;
     height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 `;
 

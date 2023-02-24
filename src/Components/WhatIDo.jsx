@@ -44,6 +44,9 @@ const SingleSkill = styled.div`
     padding: 15px 35px;
     border-radius: 10px;
     background-color: white;
+    @media (min-width: 992px){
+        min-width: 238px;
+    }
 `;
 const AboutSkill = styled.div`
     display: flex;

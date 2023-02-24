@@ -4,7 +4,7 @@ import { userDetails } from '../Data/UserData';
 import { Context } from '../Context/Context';  
 
 const AboutMeConatiner = styled.div`
-    height: 100vh;
+    min-height: 100vh;
     color: black;
     display: flex;
     transition: all 0.5s ease;
@@ -46,11 +46,15 @@ const AboutMeDescription = styled.div`
 const DescStartingLine = styled.h1`
     margin: 0;
     letter-spacing: 1px;
+    @media (min-width: 1049px) and (max-width: 1094px){
+        padding-right : 33px ;
+    }
 `;
 
 const DescRemainingPara = styled.p`
     margin: 0;
     font-size: 18px;
+    padding-right: 70px;
 `;
 
 const AboutMeDetails = styled.div`

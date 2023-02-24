@@ -28,6 +28,10 @@ const TitleUnderline = styled.span`
 `
 const EducationExperience = styled.div`
     display: flex;
+    @media (min-width: 992px) and (max-width: 1199px) {
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 const VerticalSection = styled.div`
     flex: 50%;
@@ -38,6 +42,9 @@ const Heading = styled.h3`
     font-weight: 500;
     font-size: 24px;
     margin-left: 5px;
+    @media (min-width:992px) and (max-width:1199px){
+        justify-content: center;
+    }
 `;
 const InfomationCard = styled.div`
     min-width: 380px;
@@ -50,6 +57,10 @@ const InfomationCard = styled.div`
     gap: 15px;
     margin-right: 15px;
     margin-bottom: 25px;
+    @media (min-width:992px) and (max-width:1199px){
+        width: 500px;
+        height: 270px;
+    }
 `;
 const TimeDuration = styled.span`
     width: 113px;
@@ -117,6 +128,27 @@ const Resume = () => {
                     <TitleUnderline></TitleUnderline>
                 </TitleWrapper>
                 <EducationExperience>
+                <VerticalSection>
+                        <Heading>My Experience</Heading>
+                        <InfomationCard>
+                            <TimeDuration>2021-Current</TimeDuration>
+                            <StreamOrRole>System Engineer</StreamOrRole>
+                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
+                            <SomeDescription>
+                                <Label>Role</Label> - Frontend developer<br />
+                                <Label>Responsibility</Label> - Building enterprise level applications for Ericsson(client)<br />
+                                <Label>Technologies</Label> - ReactJS, jQuery, SharePoint 
+                            </SomeDescription>
+                        </InfomationCard>
+                        {/* <InfomationCard>
+                            <TimeDuration>2021-2023</TimeDuration>
+                            <StreamOrRole>System Engineer</StreamOrRole>
+                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
+                            <SomeDescription>Working on Ericsson account to build enterprise level
+                                application that caters to their requirements.
+                            </SomeDescription>
+                        </InfomationCard> */}
+                    </VerticalSection>
                     <VerticalSection>
                         <Heading>My Education</Heading>
                         <InfomationCard>
@@ -138,27 +170,6 @@ const Resume = () => {
                                 <Label>Subjects</Label> - Physics, Chemistry, Maths
                             </SomeDescription>
                         </InfomationCard>
-                    </VerticalSection>
-                    <VerticalSection>
-                        <Heading>My Experience</Heading>
-                        <InfomationCard>
-                            <TimeDuration>2021-Current</TimeDuration>
-                            <StreamOrRole>System Engineer</StreamOrRole>
-                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
-                            <SomeDescription>
-                                <Label>Role</Label> - Frontend developer<br />
-                                <Label>Responsibility</Label> - Building enterprise level applications for Ericsson(client)<br />
-                                <Label>Technologies</Label> - ReactJS, jQuery, SharePoint 
-                            </SomeDescription>
-                        </InfomationCard>
-                        {/* <InfomationCard>
-                            <TimeDuration>2021-2023</TimeDuration>
-                            <StreamOrRole>System Engineer</StreamOrRole>
-                            <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
-                            <SomeDescription>Working on Ericsson account to build enterprise level
-                                application that caters to their requirements.
-                            </SomeDescription>
-                        </InfomationCard> */}
                     </VerticalSection>
                 </EducationExperience>
                 <ResumeLink href="https://docs.google.com/document/d/1Y2aiCKy0K-VP99n_7aOQjsC9bwPNyrcA7QsXfLndFv8/edit?usp=share_link" target="_blank">View resume</ResumeLink>
