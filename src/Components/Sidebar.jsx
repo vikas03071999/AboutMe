@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components'
-import  ProfilePicture  from '../Assets/Images/Vikas1922894.jpg'
+import  ProfilePicture  from '../Assets/Images/DisplayPicture.jpeg'
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa"
 import { SiLeetcode } from "react-icons/si"
 import { AiFillTwitterCircle } from "react-icons/ai"
@@ -32,6 +32,7 @@ const Picture = styled.img`
     height: 170px;
     border-radius: 50%;
     border: 4px solid #61dafb;
+    object-fit: cover;
 `;
 
 const Name = styled.h2`
