@@ -47,10 +47,26 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #555;
     }
+
+    html {
+      scroll-behavior: smooth !important;
+    }
+    body{
+      margin: 0;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+    @media (max-width:993px){
+      body{
+        overflow-y: scroll;
+      } 
+    }
+    
   </style>
 </head>
 
-<body style="margin: 0px;overflow-y: hidden;overflow-x: hidden;">
+<body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
   <!--
