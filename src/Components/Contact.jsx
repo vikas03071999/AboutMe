@@ -57,6 +57,9 @@ const Footer = styled.div`
 const LeftSection = styled.div`
   flex: 70%;
   font-size: 18px;
+  @media (max-width:1075px){
+    flex:60%;
+  }
 `;
 const RightSection = styled.div`
   flex:30%;

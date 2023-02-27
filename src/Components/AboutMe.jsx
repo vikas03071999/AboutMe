@@ -26,6 +26,9 @@ const Header = styled.div`
 const Title = styled.h1`
     margin: 0;
     font-size: 50px;
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 40px;
+    }
 `;
 
 const TitleUnderline = styled.span`
@@ -36,11 +39,19 @@ const TitleUnderline = styled.span`
 
 const AboutMeInfo = styled.div`
     display: flex;
-    gap: 10px;
+    gap: 20px;
+    @media (min-width: 768px) and (max-width:992px){
+        flex-direction: column;
+        /* padding-left: 70px;
+        padding-right: 70px; */
+        gap:50px;
+        padding: 20px;
+    }
 `;
 
 const AboutMeDescription = styled.div`
     flex: 70%;
+    
 `;
 
 const DescStartingLine = styled.h1`
@@ -49,12 +60,27 @@ const DescStartingLine = styled.h1`
     @media (min-width: 1049px) and (max-width: 1094px){
         padding-right : 33px ;
     }
+    @media (min-width: 768px) and (max-width:992px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28px;
+    }
 `;
 
 const DescRemainingPara = styled.p`
     margin: 0;
     font-size: 18px;
     padding-right: 70px;
+    @media (min-width: 768px) and (max-width:992px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 17px;
+        padding: 0;
+        /* padding-left: 15px;
+        padding-right: 15px */
+    }
 `;
 
 const AboutMeDetails = styled.div`
@@ -108,7 +134,7 @@ const AboutMe = () => {
                         specialized in creating and maintaining websites using various programming languages,
                         such as HTML, CSS, and JavaScript. I am responsible for designing, 
                         coding, testing, and deploying web applications or sites, 
-                        and ensuring that they are functional, user-friendly, and visually appealing. I have good
+                        and ensuring that they are functional, user-friendly, and visually appealing.<br /> I have good
                         amount of knowledge in ReactJS, NodeJS, ExpressJS along with relational and document databases
                         like MongoDB, MySQL etc.
 

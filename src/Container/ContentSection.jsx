@@ -13,6 +13,9 @@ const ContentSectionContainer = styled.div`
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    @media (max-width:992px){
+      overflow-y: hidden;
+    }
 `;
 
 const ContentSection = () => {

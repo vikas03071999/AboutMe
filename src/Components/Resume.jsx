@@ -28,7 +28,7 @@ const TitleUnderline = styled.span`
 `
 const EducationExperience = styled.div`
     display: flex;
-    @media (min-width: 992px) and (max-width: 1199px) {
+    @media (min-width: 768px) and (max-width: 1199px) {
         flex-direction: column;
         align-items: center;
     }
@@ -42,7 +42,7 @@ const Heading = styled.h3`
     font-weight: 500;
     font-size: 24px;
     margin-left: 5px;
-    @media (min-width:992px) and (max-width:1199px){
+    @media (min-width:768px) and (max-width:1199px){
         justify-content: center;
     }
 `;
@@ -57,7 +57,7 @@ const InfomationCard = styled.div`
     gap: 15px;
     margin-right: 15px;
     margin-bottom: 25px;
-    @media (min-width:992px) and (max-width:1199px){
+    @media (min-width:768px) and (max-width:1199px){
         width: 500px;
         height: 270px;
     }

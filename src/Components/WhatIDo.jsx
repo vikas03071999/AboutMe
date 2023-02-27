@@ -34,8 +34,8 @@ const SkillsContainer = styled.div`
     gap: 15px;
 `;
 const SingleSkill = styled.div`
-    min-width: 270px;
-    min-height: 190px;
+    /* min-width: 270px;
+    min-height: 190px; */
     flex: 35%;
     display: flex;
     gap: 15px;
@@ -44,9 +44,12 @@ const SingleSkill = styled.div`
     padding: 15px 35px;
     border-radius: 10px;
     background-color: white;
-    @media (min-width: 992px){
+    /* @media (min-width: 992px){
         min-width: 238px;
-    }
+    } */
+    /* @media (max-width:857px) {
+        
+    } */
 `;
 const AboutSkill = styled.div`
     display: flex;

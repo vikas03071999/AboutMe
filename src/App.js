@@ -12,6 +12,9 @@ const AppContainer = styled.div`
   display: flex;
   /* position: relative; */
   font-family: 'Poppins', sans-serif;
+  @media (max-width:992px) {
+    flex-direction: column;
+  }
 `;
 const App = () => {
   return (
