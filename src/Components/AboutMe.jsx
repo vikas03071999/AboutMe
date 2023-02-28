@@ -29,29 +29,47 @@ const Title = styled.h1`
     @media (min-width: 768px) and (max-width:992px){
         font-size: 40px;
     }
+    @media (min-width: 600px ) and (max-width:768px){
+        font-size: 35px;
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 32px;
+    }
 `;
 
 const TitleUnderline = styled.span`
     width: 80px;
     border: 3px solid #61dafb;
+    @media (min-width: 600px ) and (max-width:768px){
+        width: 65px;  
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 60px;
+    }
 `
 
 
 const AboutMeInfo = styled.div`
     display: flex;
     gap: 20px;
-    @media (min-width: 768px) and (max-width:992px){
+    @media (min-width: 500px) and (max-width:992px){
         flex-direction: column;
         /* padding-left: 70px;
         padding-right: 70px; */
         gap:50px;
         padding: 20px;
     }
+
+    @media (min-width: 600px ) and (max-width:768px){
+        padding: 18px;  
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 15px;
+    }
 `;
 
 const AboutMeDescription = styled.div`
     flex: 70%;
-    
 `;
 
 const DescStartingLine = styled.h1`
@@ -65,6 +83,19 @@ const DescStartingLine = styled.h1`
         align-items: center;
         justify-content: center;
         font-size: 28px;
+    }
+    @media (min-width: 600px ) and (max-width:768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size : 23px ;
+    }
+    @media (min-width: 500px ) and (max-width:600px){
+        /* display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; */
+        font-size : 22px ;
     }
 `;
 
@@ -80,6 +111,20 @@ const DescRemainingPara = styled.p`
         padding: 0;
         /* padding-left: 15px;
         padding-right: 15px */
+    }
+    @media (min-width: 600px ) and (max-width:768px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size  : 16px ;
+        padding: 0;
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size  : 15px ;
+        padding: 0;
     }
 `;
 
@@ -129,7 +174,7 @@ const AboutMe = () => {
                 </Header>
                 <AboutMeInfo>
                     <AboutMeDescription>
-                        <DescStartingLine>I am <span style={{ color: "#61dafb" }}>Vikas Belal</span>, a full stack developer</DescStartingLine><br />
+                        <DescStartingLine>I am <span style={{ color: "#61dafb" }}>  Vikas Belal</span>, a full stack developer</DescStartingLine><br />
                         <DescRemainingPara>
                         specialized in creating and maintaining websites using various programming languages,
                         such as HTML, CSS, and JavaScript. I am responsible for designing, 

@@ -42,35 +42,64 @@ const Welcome = styled.h2`
     font-weight: 500;
     font-size: 32px;
     margin: 0;
+    @media (min-width:668px) and (max-width:768px){
+        font-size: 27px;
+    }
+    
+    @media (min-width:620px) and (max-width:668px){
+        font-size: 25px;
+    }
+
+    @media (min-width:550px) and (max-width:619px){
+        font-size: 23px;
+    }
+
+    @media (min-width: 500px) and (max-width: 549px){
+        font-size: 21px;
+    }
 `;
 
 const WhatAmI = styled.h1`
     font-size: 55px;
     margin: 0;
+    @media (min-width:668px) and (max-width:768px){
+        font-size: 50px;
+    }
+    
+    @media (min-width:620px) and (max-width:668px){
+        font-size: 45px;
+    }
+
+    @media (min-width:550px) and (max-width:619px){
+        font-size: 41px;
+    }
+
+    @media (min-width: 500px) and (max-width: 549px){
+        font-size: 37px;
+    }
 `;
 
 const BasedIn = styled.p`
     font-size: 32px;
     font-weight: 300;
     margin: 0;
-`;
+    @media (min-width:668px) and (max-width:768px){
+        font-size: 27px;
+    }
+    
+    @media (min-width:620px) and (max-width:668px){
+        font-size: 25px;
+    }
 
-const HireMe = styled.button`
-    border: 2px solid #61dafb;
-    padding: 10px 30px;
-    color: #61dafb;
-    font-family: 'Libre Franklin', sans-serif;
-    background: transparent;
-    border-radius: 30px;
-    font-size: 20px;
-    cursor: pointer;
-    transition: all 0.5s ease;
-    &:hover{
-        background-color: #61dafb;
-        color: white;
-        font-weight: 500;
+    @media (min-width:550px) and (max-width:619px){
+        font-size: 23px;
+    }
+
+    @media (min-width: 500px) and (max-width: 549px){
+        font-size: 21px;
     }
 `;
+
 const ViewMyWork = styled.a`
     text-decoration: none;
     border: 2px solid #61dafb;
@@ -86,6 +115,21 @@ const ViewMyWork = styled.a`
         background-color: #61dafb;
         color: white;
         font-weight: 500;
+    }
+    @media (min-width:668px) and (max-width:768px){
+        font-size: 17px;
+    }
+    
+    @media (min-width:620px) and (max-width:668px){
+        font-size: 16px;
+    }
+
+    @media (min-width:550px) and (max-width:619px){
+        font-size: 15px;
+    }
+
+    @media (min-width: 500px) and (max-width: 549px){
+        font-size: 14px;
     }
 `;
 

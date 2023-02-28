@@ -26,6 +26,15 @@ const TitleWrapper = styled.div`
 const Title = styled.h1`
     margin: 0;
     font-size: 50px;
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 40px;
+    }
+    @media (min-width: 600px ) and (max-width:768px){
+        font-size: 35px;
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 32px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
@@ -102,6 +111,10 @@ const ProjectCardSmall = styled.div`
         width: 240px;
         height: 145px;
     }
+    @media (max-width:600px){
+        width: 360px;
+        height: 260px;
+    }
 
 `;
 const ProjectCardMedium = styled.div`
@@ -139,6 +152,10 @@ const ProjectCardMedium = styled.div`
         width: 241px;
         height: 428px;
     }
+    @media (max-width:600px){
+        width: 360px;
+        height: 356px;
+    }
 `;
 const ProjectCardLarge = styled.div`
     cursor: pointer;
@@ -174,6 +191,10 @@ const ProjectCardLarge = styled.div`
     @media (min-width:992px) and (max-width:1020px){
         width: 239px;
         height: 385px;
+    }
+    @media (max-width:600px){
+        width: 360px;
+        height: 490px;
     }
 `;
 const ProjectCardExtraLarge = styled.div`
@@ -211,6 +232,10 @@ const ProjectCardExtraLarge = styled.div`
         width: 239px;
         height: 433px;
     }
+    @media (max-width:600px){
+        width: 360px;
+        height: 540px;
+    }
 
 `;
 const ProjectCardImage = styled.img`
@@ -237,11 +262,11 @@ const CurrentProjectCategory = styled.p`
 `;
 
 const ProjectsContainerTwoColumn = styled.div`
-    display: flex;
-    justify-content: center;
-    margin: 0px 100px;
-    @media (min-width:951px){
-        display: none;
+    display: none;
+    @media (min-width:601px) and (max-width:950px){
+        display: flex;
+        justify-content: center;
+        margin: 0px 100px;
     }
     @media (min-width:900px) and (max-width:950px){
         margin: 0px 70px;
@@ -253,6 +278,17 @@ const ProjectsContainerTwoColumn = styled.div`
     @media (min-width:768px) and (max-width:849px){
         margin: 0px 20px;
     }
+`;
+
+const ProjectsContainerSingleColumn = styled.div`
+    display: none;
+    
+    @media(min-width:500px) and (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
 `;
 
 const Portfolio = () => {
@@ -519,6 +555,81 @@ const Portfolio = () => {
                         </ProjectCardSmall>
                     </ProjectColumn>
                 </ProjectsContainerTwoColumn>
+                <ProjectsContainerSingleColumn>
+                    <ProjectColumn>
+                    <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
+                            {
+                                showImage1 ?
+                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[0].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[0].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+
+                        </ProjectCardSmall>
+                        <a href="https://vikas03071999.github.io/ChatApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)} onClick={() => window.location}>
+                            {
+                                showImage2 ?
+                                    <ProjectCardImage src={ChatAppThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[1].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[1].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardLarge></a>
+                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                            {
+                                showImage3 ?
+                                    <ProjectCardImage src={QuizAppThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardExtraLarge></a>
+                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
+                            {
+                                showImage4 ?
+                                    <ProjectCardImage src={EcommerceThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[3].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[3].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardMedium></a>
+                        <ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                            {
+                                showImage5 ?
+                                    <ProjectCardImage src={MyBioThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[4].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[4].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardSmall>
+                        <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
+                            {
+                                showImage6 ?
+                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardSmall>
+                        <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
+                            {
+                                showImage7 ?
+                                    <ProjectCardImage src={EcommerceThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[6].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[6].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardMedium>
+                    </ProjectColumn>
+                </ProjectsContainerSingleColumn>
             </PortfolioWrapper>
         </PortfolioContainer>
     )

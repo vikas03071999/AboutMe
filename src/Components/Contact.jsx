@@ -22,6 +22,15 @@ const TitleWrapper = styled.div`
 const Title = styled.h1`
     margin: 0;
     font-size: 50px;
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 40px;
+    }
+    @media (min-width: 600px ) and (max-width:768px){
+        font-size: 35px;
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 32px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
@@ -39,6 +48,9 @@ const SingleContactInformation = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
+    @media (max-width:638px){
+      gap: 50px !important;
+    }
 `;
 const ContactKey = styled.span`
     font-size: 25px;
@@ -48,11 +60,19 @@ const ContactKey = styled.span`
 const ContactValue = styled.span`
     font-size: 20px;
     flex: 80%;
+    @media (max-width:638px){
+      flex: 60%;
+    }
 `;
 const Footer = styled.div`
   background-color:#f8f9fa;
   display: flex;
   padding: 50px 25px;
+  @media (max-width:768px){
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
 `
 const LeftSection = styled.div`
   flex: 70%;

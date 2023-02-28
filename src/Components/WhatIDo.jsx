@@ -22,6 +22,15 @@ const TitleWrapper = styled.div`
 const Title = styled.h1`
     margin: 0;
     font-size: 50px;
+    @media (min-width: 768px) and (max-width:992px){
+        font-size: 40px;
+    }
+    @media (min-width: 600px ) and (max-width:768px){
+        font-size: 35px;
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 32px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
