@@ -35,6 +35,12 @@ const Title = styled.h1`
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 32px;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 22px
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 27px;
+    }
 `;
 
 const TitleUnderline = styled.span`
@@ -46,16 +52,22 @@ const TitleUnderline = styled.span`
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 60px;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 50px;
+        width: 45px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 40px;
+        width: 55px;
+    }
 `
 
 
 const AboutMeInfo = styled.div`
     display: flex;
     gap: 20px;
-    @media (min-width: 500px) and (max-width:992px){
+    @media (min-width: 280px) and (max-width:992px){
         flex-direction: column;
-        /* padding-left: 70px;
-        padding-right: 70px; */
         gap:50px;
         padding: 20px;
     }
@@ -65,6 +77,12 @@ const AboutMeInfo = styled.div`
     }
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 15px;
+    }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 15px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 19px;
     }
 `;
 
@@ -97,6 +115,12 @@ const DescStartingLine = styled.h1`
         justify-content: center; */
         font-size : 22px ;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 13px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 17px;
+    }
 `;
 
 const DescRemainingPara = styled.p`
@@ -126,6 +150,20 @@ const DescRemainingPara = styled.p`
         font-size  : 15px ;
         padding: 0;
     }
+    @media (min-width:280px) and (max-width:350px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size  : 11px ;
+        padding: 0;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size  : 13px ;
+        padding: 0;
+    }
 `;
 
 const AboutMeDetails = styled.div`
@@ -141,10 +179,24 @@ const SingleDetail = styled.div`
 const DetailKey = styled.label`
     font-weight: 800;
     width: 57px;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 9px;
+        width: auto !important;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 14px;
+        width: auto !important;
+    }
 `;
 
 const DetailValue = styled.p`
     margin-left: 10px;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 9px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 14px;
+    }
 `;
 
 const MailElement = styled.a`

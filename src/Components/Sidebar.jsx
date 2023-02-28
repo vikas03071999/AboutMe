@@ -101,6 +101,12 @@ const NameToLeft = styled.h3`
     font-size: 22px;
     font-weight: 500;
     margin-left: 15px;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 19.5px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+         font-size: 21px;
+    }
 `;
 const IconsToRight = styled.div`
     display: flex;

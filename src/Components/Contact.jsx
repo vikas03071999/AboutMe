@@ -31,10 +31,30 @@ const Title = styled.h1`
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 32px;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 22px
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 27px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
     border: 3px solid #61dafb;
+    @media (min-width: 600px ) and (max-width:768px){
+        width: 65px;  
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 60px;
+    }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 50px;
+        width: 45px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 40px;
+        width: 55px;
+    }
 `;
 const ContactInformation = styled.div`
     display: flex;
@@ -51,17 +71,38 @@ const SingleContactInformation = styled.div`
     @media (max-width:638px){
       gap: 50px !important;
     }
+    
+    @media (min-width:280px) and (max-width:350px){
+        flex-direction: column;
+        gap: 20px !important;
+    }
+      @media (min-width:350px) and (max-width:500px){
+         flex-direction: column;
+         gap: 20px !important;
+    }
 `;
 const ContactKey = styled.span`
     font-size: 25px;
     font-weight: 500;
     flex: 20%;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 20px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+         font-size: 21px;
+    }
 `;
 const ContactValue = styled.span`
     font-size: 20px;
     flex: 80%;
     @media (max-width:638px){
       flex: 60%;
+    }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 14px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+         font-size: 16px;
     }
 `;
 const Footer = styled.div`
@@ -80,10 +121,22 @@ const LeftSection = styled.div`
   @media (max-width:1075px){
     flex:60%;
   }
+  @media (min-width:280px) and (max-width:350px){
+        font-size: 12.5px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+         font-size: 14px;
+    }
 `;
 const RightSection = styled.div`
   flex:30%;
   font-size: 18px;
+  @media (min-width:280px) and (max-width:350px){
+        font-size: 12.5px;
+  }
+  @media (min-width:350px) and (max-width:500px){
+         font-size: 14px;
+  }
 `;
 const location = window.location.href;
 

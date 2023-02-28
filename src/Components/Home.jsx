@@ -42,7 +42,13 @@ const Welcome = styled.h2`
     font-weight: 500;
     font-size: 32px;
     margin: 0;
-    @media (min-width:668px) and (max-width:768px){
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 15px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 19px;
+    }
+    @media (min-width:500px) and (max-width:768px){
         font-size: 27px;
     }
     
@@ -62,6 +68,12 @@ const Welcome = styled.h2`
 const WhatAmI = styled.h1`
     font-size: 55px;
     margin: 0;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 22px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 27px
+    }
     @media (min-width:668px) and (max-width:768px){
         font-size: 50px;
     }
@@ -83,6 +95,12 @@ const BasedIn = styled.p`
     font-size: 32px;
     font-weight: 300;
     margin: 0;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 15px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 19px;
+    }
     @media (min-width:668px) and (max-width:768px){
         font-size: 27px;
     }

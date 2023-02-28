@@ -31,20 +31,44 @@ const Title = styled.h1`
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 32px;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 22px
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 27px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
     border: 3px solid #61dafb;
+    @media (min-width: 600px ) and (max-width:768px){
+        width: 65px;  
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 60px;
+    }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 50px;
+        width: 45px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 40px;
+        width: 55px;
+    }
 `
 const SkillsContainer = styled.div`
     display: flex;
     flex-wrap: wrap;
     padding: 30px;
     gap: 15px;
+    @media (min-width:280px) and (max-width:350px){
+        padding: 5px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+       padding: 10px;
+    }
 `;
 const SingleSkill = styled.div`
-    /* min-width: 270px;
-    min-height: 190px; */
     flex: 35%;
     display: flex;
     gap: 15px;
@@ -53,12 +77,6 @@ const SingleSkill = styled.div`
     padding: 15px 35px;
     border-radius: 10px;
     background-color: white;
-    /* @media (min-width: 992px){
-        min-width: 238px;
-    } */
-    /* @media (max-width:857px) {
-        
-    } */
 `;
 const AboutSkill = styled.div`
     display: flex;
@@ -68,9 +86,20 @@ const SkillTitle = styled.h3`
     margin: 0;
     font-size: 24px;
     font-weight: 500;
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 16px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+       font-size: 19px;
+    }
 `;
 const SkillDescription = styled.p`
-
+     @media (min-width:280px) and (max-width:350px){
+        font-size: 12px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+       font-size: 14px;
+    }
 `;
 
 const WhatIDo = () => {

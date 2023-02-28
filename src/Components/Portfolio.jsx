@@ -35,10 +35,30 @@ const Title = styled.h1`
     @media (min-width: 500px ) and (max-width:599px){
         font-size: 32px;
     }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 22px
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 27px;
+    }
 `;
 const TitleUnderline = styled.span`
     width: 80px;
     border: 3px solid #61dafb;
+    @media (min-width: 600px ) and (max-width:768px){
+        width: 65px;  
+    }
+    @media (min-width: 500px ) and (max-width:599px){
+        font-size: 60px;
+    }
+    @media (min-width:280px) and (max-width:350px){
+        font-size: 50px;
+        width: 45px;
+    }
+    @media (min-width:350px) and (max-width:500px){
+        font-size: 40px;
+        width: 55px;
+    }
 `;
 const ProjectCategories = styled.div`
     display: flex;
@@ -283,7 +303,7 @@ const ProjectsContainerTwoColumn = styled.div`
 const ProjectsContainerSingleColumn = styled.div`
     display: none;
     
-    @media(min-width:500px) and (max-width:600px){
+    @media(min-width:280px) and (max-width:600px){
         display: flex;
         flex-direction: column;
         align-items: center;
