@@ -22,8 +22,8 @@ export const userProjects = [
         "thumbnailUrl": "../Assets/Images/MyWork2.PNG"
     },
     {
-        "projectName": "Quiz App",
-        "techStack": "ReactJS",
+        "projectName": "Productivity App",
+        "techStack": "ReactJS, OpenAI apis",
         "tag": "Web",
         "thumbnailUrl": "../Assets/Images/MyWork3.PNG"
     },
@@ -40,8 +40,8 @@ export const userProjects = [
         "thumbnailUrl": "../Assets/Images/MyWork1.PNG"
     },
     {
-        "projectName": "YouTube clone",
-        "techStack": "MERN stack",
+        "projectName": "Quiz App",
+        "techStack": "ReactJS",
         "tag": "Web",
         "thumbnailUrl": "../Assets/Images/MyWork2.PNG"
     },

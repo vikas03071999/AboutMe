@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import BlogAppThumbnail from '../Assets/Images/BlogAppThumbnail.PNG'
 import ChatAppThumbnail from '../Assets/Images/ChatAppThumbnail.PNG'
 import QuizAppThumbnail from '../Assets/Images/QuizAppThumbnail.PNG'
+import ProductivityAppThumbnail from '../Assets/Images/ProductivityAppThumbnail.PNG'
 import EcommerceThumbnail from '../Assets/Images/EcommerceThumbnail.PNG'
 import MyBioThumbnail from '../Assets/Images/MyBioThumbnail.PNG'
 import { userProjects } from '../Data/UserData'
@@ -366,10 +367,20 @@ const Portfolio = () => {
                         </ProjectCardLarge></a>
                     </ProjectColumn>
                     <ProjectColumn>
-                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        {/* <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
                                     <ProjectCardImage src={QuizAppThumbnail} /> :
+                                    <AboutProject>
+                                        <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
+                                        <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
+                                    </AboutProject>
+                            }
+                        </ProjectCardExtraLarge></a> */}
+                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                            {
+                                showImage3 ?
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
@@ -388,7 +399,7 @@ const Portfolio = () => {
                         </ProjectCardMedium></a>
                     </ProjectColumn>
                     <ProjectColumn>
-                        <ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                        <a href="https://know-me-5iql.vercel.app" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
                             {
                                 showImage5 ?
                                     <ProjectCardImage src={MyBioThumbnail} /> :
@@ -398,16 +409,19 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardSmall>
-                        <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
+                        </a>
+                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}>
+                            <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
                             {
                                 showImage6 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <ProjectCardImage src={QuizAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardSmall>
+                        </a>
                         <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                             {
                                 showImage7 ?
@@ -521,16 +535,18 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardLarge></a>
-                        <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
-                            {
-                                showImage6 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
-                                    <AboutProject>
-                                        <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
-                                        <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
-                                    </AboutProject>
-                            }
-                        </ProjectCardSmall>
+                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}>
+                            <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
+                                {
+                                    showImage6 ?
+                                        <ProjectCardImage src={QuizAppThumbnail} /> :
+                                        <AboutProject>
+                                            <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
+                                            <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
+                                        </AboutProject>
+                                }
+                            </ProjectCardSmall>
+                        </a>
                         <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                             {
                                 showImage7 ?
@@ -543,10 +559,10 @@ const Portfolio = () => {
                         </ProjectCardMedium>
                     </ProjectColumn>
                     <ProjectColumn>
-                    <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={QuizAppThumbnail} /> :
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
@@ -577,7 +593,7 @@ const Portfolio = () => {
                 </ProjectsContainerTwoColumn>
                 <ProjectsContainerSingleColumn>
                     <ProjectColumn>
-                    <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
+                        <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
                             {
                                 showImage1 ?
                                     <ProjectCardImage src={BlogAppThumbnail} /> :
@@ -598,10 +614,10 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardLarge></a>
-                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={QuizAppThumbnail} /> :
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
@@ -628,16 +644,18 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardSmall>
-                        <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
-                            {
-                                showImage6 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
-                                    <AboutProject>
-                                        <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
-                                        <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
-                                    </AboutProject>
-                            }
-                        </ProjectCardSmall>
+                        <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}>
+                            <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
+                                {
+                                    showImage6 ?
+                                        <ProjectCardImage src={QuizAppThumbnail} /> :
+                                        <AboutProject>
+                                            <ProjectTitle>{userProjects[5].projectName}</ProjectTitle>
+                                            <CurrentProjectCategory>{userProjects[5].techStack}</CurrentProjectCategory>
+                                        </AboutProject>
+                                }
+                            </ProjectCardSmall>
+                        </a>
                         <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                             {
                                 showImage7 ?
