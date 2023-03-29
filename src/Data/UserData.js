@@ -10,7 +10,7 @@ export const userDetails = {
 
 export const userProjects = [
     {
-        "projectName": "Blog Application",
+        "projectName": "AImage generator",
         "techStack": "MERN stack",
         "tag": "Web",
         "thumbnailUrl": "../Assets/Images/MyWork1.PNG"

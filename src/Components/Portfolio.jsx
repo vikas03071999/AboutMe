@@ -3,9 +3,10 @@ import styled from 'styled-components'
 import BlogAppThumbnail from '../Assets/Images/BlogAppThumbnail.PNG'
 import ChatAppThumbnail from '../Assets/Images/ChatAppThumbnail.PNG'
 import QuizAppThumbnail from '../Assets/Images/QuizAppThumbnail.PNG'
-import ProductivityAppThumbnail from '../Assets/Images/ProductivityAppThumbnail.PNG'
+import ProductivityAppThumbnail from '../Assets/Images/ProductivityAppThumbnail.jpg'
 import EcommerceThumbnail from '../Assets/Images/EcommerceThumbnail.PNG'
 import MyBioThumbnail from '../Assets/Images/MyBioThumbnail.PNG'
+import AiImageAppThumbnail from '../Assets/Images/AiImageAppThumbnail.jpg'
 import { userProjects } from '../Data/UserData'
 import { Context } from "../Context/Context"
 
@@ -109,6 +110,7 @@ const ProjectCardSmall = styled.div`
     justify-content:center;
     border-radius: 7px;
     transition: all 0.6s ease;
+    border: 1px solid #61dafb;
     &:hover{
         background-color: #201f1f;
     }
@@ -150,6 +152,7 @@ const ProjectCardMedium = styled.div`
     justify-content:center;
     border-radius: 7px;
     transition: all 0.6s ease;
+    border: 0.5px solid #61dafb;
     &:hover{
         background-color: #201f1f;
     }
@@ -190,6 +193,7 @@ const ProjectCardLarge = styled.div`
     justify-content:center;
     border-radius: 7px;
     transition: all 0.6s ease;
+    border: 0.5px solid #61dafb;
     &:hover{
         background-color: #201f1f;
     }
@@ -230,6 +234,7 @@ const ProjectCardExtraLarge = styled.div`
     justify-content:center;
     border-radius: 7px;
     transition: all 0.6s ease;
+    border: 0.5px solid #61dafb;
     &:hover{
         background-color: #201f1f;
     }
@@ -262,7 +267,6 @@ const ProjectCardExtraLarge = styled.div`
 const ProjectCardImage = styled.img`
     height: inherit;
     width: inherit;
-    border-radius: 10px;
     object-fit: cover;
 `;
 const AboutProject = styled.div`
@@ -344,17 +348,17 @@ const Portfolio = () => {
                 <ProjectsContainerThreeColumn>
                     {/* <ThreeColumnView> */}
                     <ProjectColumn>
-                        <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
+                        <a href="https://ai-image-generator-swart.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
                             {
                                 showImage1 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <ProjectCardImage src={AiImageAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[0].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[0].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
 
-                        </ProjectCardSmall>
+                        </ProjectCardSmall></a>
                         <a href="https://vikas03071999.github.io/ChatApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)} onClick={() => window.location}>
                             {
                                 showImage2 ?
@@ -514,17 +518,17 @@ const Portfolio = () => {
                 </ProjectsContainerThreeColumn>
                 <ProjectsContainerTwoColumn>
                     <ProjectColumn>
-                        <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
+                        <a href="https://ai-image-generator-swart.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
                             {
                                 showImage1 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <ProjectCardImage src={AiImageAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[0].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[0].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
 
-                        </ProjectCardSmall>
+                        </ProjectCardSmall></a>
                         <a href="https://vikas03071999.github.io/ChatApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)} onClick={() => window.location}>
                             {
                                 showImage2 ?
@@ -593,17 +597,17 @@ const Portfolio = () => {
                 </ProjectsContainerTwoColumn>
                 <ProjectsContainerSingleColumn>
                     <ProjectColumn>
-                        <ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
+                        <a href="https://ai-image-generator-swart.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage1(false)} onMouseLeave={() => setShowImage1(true)}>
                             {
                                 showImage1 ?
-                                    <ProjectCardImage src={BlogAppThumbnail} /> :
+                                    <ProjectCardImage src={AiImageAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[0].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[0].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
 
-                        </ProjectCardSmall>
+                        </ProjectCardSmall></a>
                         <a href="https://vikas03071999.github.io/ChatApp/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardLarge onMouseOver={() => setShowImage2(false)} onMouseLeave={() => setShowImage2(true)} onClick={() => window.location}>
                             {
                                 showImage2 ?
