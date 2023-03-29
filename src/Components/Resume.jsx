@@ -243,7 +243,7 @@ const Resume = () => {
                         </InfomationCard>
                     </VerticalSection>
                 </EducationExperience>
-                <ResumeLink href="https://docs.google.com/document/d/1Y2aiCKy0K-VP99n_7aOQjsC9bwPNyrcA7QsXfLndFv8/edit?usp=share_link" target="_blank">View resume</ResumeLink>
+                <ResumeLink href="https://drive.google.com/file/d/1crhbKlbzyk_lbibGQ1iYVnKHUCl2UhW1/view?usp=share_link" target="_blank">View resume</ResumeLink>
             </ResumeWrapper>
         </ResumeContainer>
     )
