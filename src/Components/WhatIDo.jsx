@@ -73,10 +73,11 @@ const SingleSkill = styled.div`
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
-    border: 2px dotted #61dafb;
+    border: 2px solid #f5f5f5;
     padding: 15px 35px;
     border-radius: 10px;
     background-color: white;
+    box-shadow: 0px 10px 20px 0px rgba(166,158,166,1);
 `;
 const AboutSkill = styled.div`
     display: flex;

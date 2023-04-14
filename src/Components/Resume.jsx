@@ -92,6 +92,7 @@ const InfomationCard = styled.div`
     gap: 15px;
     margin-right: 15px;
     margin-bottom: 25px;
+    box-shadow: 0px 10px 20px 0px rgba(166,158,166,1);
     @media (min-width:768px) and (max-width:1199px){
         width: 500px;
         height: 270px;
@@ -207,7 +208,7 @@ const Resume = () => {
                             <UniversityOrCompany>Tata Consultancy Services</UniversityOrCompany>
                             <SomeDescription>
                                 <Label>Role</Label> - Frontend developer<br />
-                                <Label>Responsibility</Label> - Building enterprise level applications for Ericsson(client)<br />
+                                <Label>Responsibility</Label> - Enterprise level web application development<br />
                                 <Label>Technologies</Label> - ReactJS, jQuery, SharePoint 
                             </SomeDescription>
                         </InfomationCard>
@@ -232,7 +233,7 @@ const Resume = () => {
                                 Operating System, Computer networks, Data Structures and algorithms etc
                             </SomeDescription>
                         </InfomationCard>
-                        <InfomationCard>
+                        {/* <InfomationCard>
                             <TimeDuration>2015-2016</TimeDuration>
                             <StreamOrRole>Science stream</StreamOrRole>
                             <UniversityOrCompany>New Beersheba School</UniversityOrCompany>
@@ -240,10 +241,10 @@ const Resume = () => {
                                 <Label>Overall percentage</Label> - 79.6 <br />
                                 <Label>Subjects</Label> - Physics, Chemistry, Maths
                             </SomeDescription>
-                        </InfomationCard>
+                        </InfomationCard> */}
                     </VerticalSection>
                 </EducationExperience>
-                <ResumeLink href="https://drive.google.com/file/d/1crhbKlbzyk_lbibGQ1iYVnKHUCl2UhW1/view?usp=share_link" target="_blank">View resume</ResumeLink>
+                <ResumeLink href="https://drive.google.com/file/d/1TBv4kqNPiSDEyI0JPKpM3hnwaxNwyhlr/view?usp=share_link" target="_blank">View resume</ResumeLink>
             </ResumeWrapper>
         </ResumeContainer>
     )

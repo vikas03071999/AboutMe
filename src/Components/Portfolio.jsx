@@ -1,12 +1,12 @@
 import React, { useState, useContext } from 'react'
 import styled from 'styled-components'
-import BlogAppThumbnail from '../Assets/Images/BlogAppThumbnail.PNG'
 import ChatAppThumbnail from '../Assets/Images/ChatAppThumbnail.PNG'
 import QuizAppThumbnail from '../Assets/Images/QuizAppThumbnail.PNG'
-import ProductivityAppThumbnail from '../Assets/Images/ProductivityAppThumbnail.jpg'
+import ProductivityAppThumbnail from '../Assets/Images/ProductivityAppThumbnail.PNG'
 import EcommerceThumbnail from '../Assets/Images/EcommerceThumbnail.PNG'
 import MyBioThumbnail from '../Assets/Images/MyBioThumbnail.PNG'
-import AiImageAppThumbnail from '../Assets/Images/AiImageAppThumbnail.jpg'
+import AiImageAppThumbnail from '../Assets/Images/AiImageAppThumbnail.PNG'
+import BikeRentalAppThumbnail from '../Assets/Images/BikeRentalLogo.PNG'
 import { userProjects } from '../Data/UserData'
 import { Context } from "../Context/Context"
 
@@ -381,20 +381,20 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardExtraLarge></a> */}
-                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://bikerental-theta.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
+                                    <ProjectCardImage src={BikeRentalAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardExtraLarge></a>
-                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
+                        <a href="https://productivity-suite-ch43.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
                             {
                                 showImage4 ?
-                                    <ProjectCardImage src={EcommerceThumbnail} /> :
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[3].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[3].techStack}</CurrentProjectCategory>
@@ -403,7 +403,7 @@ const Portfolio = () => {
                         </ProjectCardMedium></a>
                     </ProjectColumn>
                     <ProjectColumn>
-                        <a href="https://know-me-5iql.vercel.app" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                        <a href="https://know-me-seven.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
                             {
                                 showImage5 ?
                                     <ProjectCardImage src={MyBioThumbnail} /> :
@@ -426,7 +426,8 @@ const Portfolio = () => {
                             }
                         </ProjectCardSmall>
                         </a>
-                        <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
+                        <a href="https://vikas03071999.github.io/Ecommerce/" target='_blank' style={{ textDecoration: "none" }}>
+                            <ProjectCardSmall onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                             {
                                 showImage7 ?
                                     <ProjectCardImage src={EcommerceThumbnail} /> :
@@ -435,7 +436,8 @@ const Portfolio = () => {
                                         <CurrentProjectCategory>{userProjects[6].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardMedium>
+                        </ProjectCardSmall>
+                        </a>
                     </ProjectColumn>
                     {/* </ThreeColumnView> */}
                     {/* <TwoColumnView>
@@ -563,27 +565,27 @@ const Portfolio = () => {
                         </ProjectCardMedium>
                     </ProjectColumn>
                     <ProjectColumn>
-                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://bikerental-theta.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
+                                    <ProjectCardImage src={BikeRentalAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardExtraLarge></a>
-                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
+                        <a href="https://productivity-suite-ch43.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
                             {
                                 showImage4 ?
-                                    <ProjectCardImage src={EcommerceThumbnail} /> :
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[3].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[3].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardMedium></a>
-                        <ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                        <a href="https://know-me-seven.vercel.app/" target='_blank' style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
                             {
                                 showImage5 ?
                                     <ProjectCardImage src={MyBioThumbnail} /> :
@@ -592,7 +594,7 @@ const Portfolio = () => {
                                         <CurrentProjectCategory>{userProjects[4].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardSmall>
+                        </ProjectCardSmall></a>
                     </ProjectColumn>
                 </ProjectsContainerTwoColumn>
                 <ProjectsContainerSingleColumn>
@@ -618,27 +620,28 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardLarge></a>
-                        <a href="https://productivity-suite-livid.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
+                        <a href="https://bikerental-theta.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardExtraLarge onMouseOver={() => setShowImage3(false)} onMouseLeave={() => setShowImage3(true)}>
                             {
                                 showImage3 ?
-                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
+                                    <ProjectCardImage src={BikeRentalAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[2].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[2].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardExtraLarge></a>
-                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
+                        <a href="https://productivity-suite-ch43.vercel.app/" target="_blank" style={{ textDecoration: "none" }}><ProjectCardMedium onMouseOver={() => setShowImage4(false)} onMouseLeave={() => setShowImage4(true)}>
                             {
                                 showImage4 ?
-                                    <ProjectCardImage src={EcommerceThumbnail} /> :
+                                    <ProjectCardImage src={ProductivityAppThumbnail} /> :
                                     <AboutProject>
                                         <ProjectTitle>{userProjects[3].projectName}</ProjectTitle>
                                         <CurrentProjectCategory>{userProjects[3].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
                         </ProjectCardMedium></a>
-                        <ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                        <a href="https://know-me-seven.vercel.app/" target='_blank' style={{ textDecoration: "none" }}><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
+                            </ProjectCardSmall><ProjectCardSmall onMouseOver={() => setShowImage5(false)} onMouseLeave={() => setShowImage5(true)}>
                             {
                                 showImage5 ?
                                     <ProjectCardImage src={MyBioThumbnail} /> :
@@ -647,7 +650,7 @@ const Portfolio = () => {
                                         <CurrentProjectCategory>{userProjects[4].techStack}</CurrentProjectCategory>
                                     </AboutProject>
                             }
-                        </ProjectCardSmall>
+                        </ProjectCardSmall></a>
                         <a href="https://vikas03071999.github.io/QuizApp/" target="_blank" style={{ textDecoration: "none" }}>
                             <ProjectCardSmall onMouseOver={() => setShowImage6(false)} onMouseLeave={() => setShowImage6(true)}>
                                 {
@@ -660,6 +663,7 @@ const Portfolio = () => {
                                 }
                             </ProjectCardSmall>
                         </a>
+                        <a href="https://vikas03071999.github.io/Ecommerce/" target="_blank" style={{ textDecoration: "none" }} >
                         <ProjectCardMedium onMouseOver={() => setShowImage7(false)} onMouseLeave={() => setShowImage7(true)}>
                             {
                                 showImage7 ?
@@ -670,6 +674,7 @@ const Portfolio = () => {
                                     </AboutProject>
                             }
                         </ProjectCardMedium>
+                        </a>
                     </ProjectColumn>
                 </ProjectsContainerSingleColumn>
             </PortfolioWrapper>
